@@ -1,9 +1,14 @@
-# api documentation for  [grunt-wordpress-deploy (v0.0.6)](https://github.com/webrain/grunt-wordpress-deploy)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-wordpress-deploy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-wordpress-deploy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-wordpress-deploy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-wordpress-deploy)
+# npmdoc-grunt-wordpress-deploy
+
+#### api documentation for  [grunt-wordpress-deploy (v0.0.6)](https://github.com/webrain/grunt-wordpress-deploy)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-wordpress-deploy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-wordpress-deploy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-wordpress-deploy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-wordpress-deploy)
+
 #### Deploy Wordpress without pain using Grunt.
 
-[![NPM](https://nodei.co/npm/grunt-wordpress-deploy.png?downloads=true)](https://www.npmjs.com/package/grunt-wordpress-deploy)
+[![NPM](https://nodei.co/npm/grunt-wordpress-deploy.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-wordpress-deploy)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-wordpress-deploy/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-grunt-wordpress-deploy_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-wordpress-deploy/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-grunt-wordpress-deploy/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-grunt-wordpress-deploy/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-wordpress-deploy/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-wordpress-deploy/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-grunt-wordpress-deploy/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Dario Ghilardi",
-        "email": "darioghilardi@webrain.it",
         "url": "http://www.webrain.it"
     },
     "bugs": {
@@ -59,12 +63,10 @@
     "main": "Gruntfile.js",
     "maintainers": [
         {
-            "name": "ingo86",
-            "email": "darioghilardi@webrain.it"
+            "name": "ingo86"
         },
         {
-            "name": "davidthou",
-            "email": "mail@davidemilesi.com"
+            "name": "davidthou"
         }
     ],
     "name": "grunt-wordpress-deploy",
@@ -72,7 +74,6 @@
     "peerDependencies": {
         "grunt": "~0.4.1"
     },
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+ssh://git@github.com/webrain/grunt-wordpress-deploy.git"
@@ -83,16 +84,6 @@
     "version": "0.0.6"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module grunt-wordpress-deploy](#apidoc.module.grunt-wordpress-deploy)
-
-
-
-# <a name="apidoc.module.grunt-wordpress-deploy"></a>[module grunt-wordpress-deploy](#apidoc.module.grunt-wordpress-deploy)
 
 
 
