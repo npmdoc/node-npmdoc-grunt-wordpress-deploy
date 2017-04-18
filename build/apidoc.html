@@ -61,12 +61,95 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.grunt-wordpress-deploy">module grunt-wordpress-deploy</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.grunt-wordpress-deploy.grunt-wordpress-deploy">
+            function <span class="apidocSignatureSpan"></span>grunt-wordpress-deploy
+            <span class="apidocSignatureSpan">(grunt)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.grunt-wordpress-deploy" id="apidoc.module.grunt-wordpress-deploy">module grunt-wordpress-deploy</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.grunt-wordpress-deploy.grunt-wordpress-deploy" id="apidoc.element.grunt-wordpress-deploy.grunt-wordpress-deploy">
+        function <span class="apidocSignatureSpan"></span>grunt-wordpress-deploy
+        <span class="apidocSignatureSpan">(grunt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">grunt-wordpress-deploy = function (grunt) {
+
+  grunt.initConfig({
+    jshint: {
+      all: [
+        &#x27;Gruntfile.js&#x27;,
+        &#x27;tasks/*.js&#x27;,
+      ],
+      options: {
+        jshintrc: &#x27;.jshintrc&#x27;,
+      },
+    },
+
+    clean: {
+      tests: [&#x27;tmp&#x27;],
+    },
+
+    wordpressdeploy: {
+      options: {
+        backups_dir: &#x27;backups_dir/&#x27;,
+        rsync_args: [&#x27;--verbose&#x27;, &#x27;--progress&#x27;, &#x27;-rlpt&#x27;, &#x27;--compress&#x27;, &#x27;--omit-dir-times&#x27;],
+        exclusions: [&#x27;.git&#x27;, &#x27;tmp/*&#x27;, &#x27;backups_dir/&#x27;, &#x27;wp-config.php&#x27;, &#x27;composer.json&#x27;, &#x27;composer.lock&#x27;]
+      },
+      local: {
+        title: &#x27;local&#x27;,
+        database: &#x27;db_local&#x27;,
+        user: &#x27;user_local&#x27;,
+        pass: &#x27;pass_local&#x27;,
+        host: &#x27;host_local&#x27;,
+        url: &#x27;url_local&#x27;,
+        path: &#x27;path_local&#x27;
+      },
+      production: {
+        title: &#x27;staging&#x27;,
+        database: &#x27;db_staging&#x27;,
+        user: &#x27;user_staging&#x27;,
+        pass: &#x27;pass_staging&#x27;,
+        host: &#x27;host_staging&#x27;,
+        url: &#x27;url_staging&#x27;,
+        path: &#x27;path_staging&#x27;,
+        ssh_host: &#x27;ssh_staging&#x27;
+      }
+    },
+
+    nodeunit: {
+      tasks: [&#x27;test/*_test.js&#x27;]
+    },
+  });
+
+  grunt.loadTasks(&#x27;tasks&#x27;);
+
+  grunt.loadNpmTasks(&#x27;grunt-contrib-jshint&#x27;);
+  grunt.loadNpmTasks(&#x27;grunt-contrib-clean&#x27;);
+  grunt.loadNpmTasks(&#x27;grunt-contrib-nodeunit&#x27;);
+
+  // Whenever the &#x22;test&#x22; task is run, first clean the &#x22;tmp&#x22; dir, then run this
+  // plugin&#x27;s task(s), then test the result.
+  grunt.registerTask(&#x27;test&#x27;, [&#x27;clean&#x27;, &#x27;nodeunit&#x27;]);
+
+  // By default, lint and run all tests.
+  grunt.registerTask(&#x27;default&#x27;, [&#x27;jshint&#x27;, &#x27;test&#x27;]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 

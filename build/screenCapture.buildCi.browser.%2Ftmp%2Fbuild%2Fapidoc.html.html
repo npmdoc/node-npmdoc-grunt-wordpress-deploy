@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/webrain/grunt-wordpress-deploy"
-
-    >grunt-wordpress-deploy (v0.0.6)</a>
+    <a href="https://github.com/webrain/grunt-wordpress-deploy">grunt-wordpress-deploy (v0.0.6)</a>
 </h1>
 <h4>Deploy Wordpress without pain using Grunt.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.grunt-wordpress-deploy">module grunt-wordpress-deploy</a><ol>
 
@@ -90,62 +83,62 @@
   grunt.initConfig({
     jshint: {
       all: [
-        &#x27;Gruntfile.js&#x27;,
-        &#x27;tasks/*.js&#x27;,
+        'Gruntfile.js',
+        'tasks/*.js',
       ],
       options: {
-        jshintrc: &#x27;.jshintrc&#x27;,
+        jshintrc: '.jshintrc',
       },
     },
 
     clean: {
-      tests: [&#x27;tmp&#x27;],
+      tests: ['tmp'],
     },
 
     wordpressdeploy: {
       options: {
-        backups_dir: &#x27;backups_dir/&#x27;,
-        rsync_args: [&#x27;--verbose&#x27;, &#x27;--progress&#x27;, &#x27;-rlpt&#x27;, &#x27;--compress&#x27;, &#x27;--omit-dir-times&#x27;],
-        exclusions: [&#x27;.git&#x27;, &#x27;tmp/*&#x27;, &#x27;backups_dir/&#x27;, &#x27;wp-config.php&#x27;, &#x27;composer.json&#x27;, &#x27;composer.lock&#x27;]
+        backups_dir: 'backups_dir/',
+        rsync_args: ['--verbose', '--progress', '-rlpt', '--compress', '--omit-dir-times'],
+        exclusions: ['.git', 'tmp/*', 'backups_dir/', 'wp-config.php', 'composer.json', 'composer.lock']
       },
       local: {
-        title: &#x27;local&#x27;,
-        database: &#x27;db_local&#x27;,
-        user: &#x27;user_local&#x27;,
-        pass: &#x27;pass_local&#x27;,
-        host: &#x27;host_local&#x27;,
-        url: &#x27;url_local&#x27;,
-        path: &#x27;path_local&#x27;
+        title: 'local',
+        database: 'db_local',
+        user: 'user_local',
+        pass: 'pass_local',
+        host: 'host_local',
+        url: 'url_local',
+        path: 'path_local'
       },
       production: {
-        title: &#x27;staging&#x27;,
-        database: &#x27;db_staging&#x27;,
-        user: &#x27;user_staging&#x27;,
-        pass: &#x27;pass_staging&#x27;,
-        host: &#x27;host_staging&#x27;,
-        url: &#x27;url_staging&#x27;,
-        path: &#x27;path_staging&#x27;,
-        ssh_host: &#x27;ssh_staging&#x27;
+        title: 'staging',
+        database: 'db_staging',
+        user: 'user_staging',
+        pass: 'pass_staging',
+        host: 'host_staging',
+        url: 'url_staging',
+        path: 'path_staging',
+        ssh_host: 'ssh_staging'
       }
     },
 
     nodeunit: {
-      tasks: [&#x27;test/*_test.js&#x27;]
+      tasks: ['test/*_test.js']
     },
   });
 
-  grunt.loadTasks(&#x27;tasks&#x27;);
+  grunt.loadTasks('tasks');
 
-  grunt.loadNpmTasks(&#x27;grunt-contrib-jshint&#x27;);
-  grunt.loadNpmTasks(&#x27;grunt-contrib-clean&#x27;);
-  grunt.loadNpmTasks(&#x27;grunt-contrib-nodeunit&#x27;);
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
-  // Whenever the &#x22;test&#x22; task is run, first clean the &#x22;tmp&#x22; dir, then run this
-  // plugin&#x27;s task(s), then test the result.
-  grunt.registerTask(&#x27;test&#x27;, [&#x27;clean&#x27;, &#x27;nodeunit&#x27;]);
+  // Whenever the "test" task is run, first clean the "tmp" dir, then run this
+  // plugin's task(s), then test the result.
+  grunt.registerTask('test', ['clean', 'nodeunit']);
 
   // By default, lint and run all tests.
-  grunt.registerTask(&#x27;default&#x27;, [&#x27;jshint&#x27;, &#x27;test&#x27;]);
+  grunt.registerTask('default', ['jshint', 'test']);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -159,3 +152,4 @@
     ]
 </div>
 </div>
+</body></html>
