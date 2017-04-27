@@ -1,6 +1,6 @@
 # npmdoc-grunt-wordpress-deploy
 
-#### api documentation for  [grunt-wordpress-deploy (v0.0.6)](https://github.com/webrain/grunt-wordpress-deploy)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-wordpress-deploy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-wordpress-deploy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-wordpress-deploy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-wordpress-deploy)
+#### basic api documentation for  [grunt-wordpress-deploy (v0.0.6)](https://github.com/webrain/grunt-wordpress-deploy)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-wordpress-deploy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-wordpress-deploy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-wordpress-deploy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-wordpress-deploy)
 
 #### Deploy Wordpress without pain using Grunt.
 
@@ -81,7 +81,8 @@
     "scripts": {
         "test": "grunt test"
     },
-    "version": "0.0.6"
+    "version": "0.0.6",
+    "bin": {}
 }
 ```
 
